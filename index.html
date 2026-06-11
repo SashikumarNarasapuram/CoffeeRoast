@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Roast — Artisan Food Delivery</title>
+  <meta name="description" content="Coffee Roast delivers handcrafted meals from local artisan kitchens straight to your door. Browse curated menus, order in seconds, and enjoy restaurant-quality food at home." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">Coffee<span>Roast</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#categories">Categories</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#" class="nav-cart" id="nav-cart" aria-label="Shopping cart">
+          &#x1F6D2;
+          <span class="nav-cart-badge">3</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero section-padding" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-label">Artisan Food Delivery</span>
+          <h1 class="hero-title">Crafted meals,<br />delivered to your&nbsp;door.</h1>
+          <p class="hero-subtitle">
+            From local kitchens to your table — handpicked menus, freshly prepared, and delivered with care. Experience restaurant-quality dining at home.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary" id="hero-cta">Order Now</a>
+            <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-number">2,400+</div>
+              <div class="hero-stat-label">Happy Customers</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">150+</div>
+              <div class="hero-stat-label">Curated Dishes</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">25 min</div>
+              <div class="hero-stat-label">Avg. Delivery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/hero.png" alt="A beautiful spread of artisan food including gourmet burger, poke bowl, avocado toast, and latte" width="500" height="375" />
+          <div class="hero-image-badge">
+            <span class="hero-image-badge-icon">⏱️</span>
+            <div>
+              <div class="hero-image-badge-text">Fast Delivery</div>
+              <div class="hero-image-badge-sub">Under 30 minutes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CATEGORIES
+         ============================================ -->
+    <section class="categories section-padding" id="categories">
+      <div class="container">
+        <div class="section-label">Browse by</div>
+        <h2 class="section-title">Categories</h2>
+        <p class="section-subtitle">Explore our curated selection of artisan food categories, handpicked for quality and taste.</p>
+
+        <div class="categories-grid">
+          <div class="category-card" id="cat-pizza">
+            <span class="category-card-icon">🍕</span>
+            <div class="category-card-name">Pizza</div>
+            <div class="category-card-count">24 items</div>
+          </div>
+          <div class="category-card" id="cat-burgers">
+            <span class="category-card-icon">🍔</span>
+            <div class="category-card-name">Burgers</div>
+            <div class="category-card-count">18 items</div>
+          </div>
+          <div class="category-card" id="cat-bowls">
+            <span class="category-card-icon">🥗</span>
+            <div class="category-card-name">Bowls</div>
+            <div class="category-card-count">32 items</div>
+          </div>
+          <div class="category-card" id="cat-pasta">
+            <span class="category-card-icon">🍝</span>
+            <div class="category-card-name">Pasta</div>
+            <div class="category-card-count">15 items</div>
+          </div>
+          <div class="category-card" id="cat-desserts">
+            <span class="category-card-icon">🍰</span>
+            <div class="category-card-name">Desserts</div>
+            <div class="category-card-count">21 items</div>
+          </div>
+          <div class="category-card" id="cat-drinks">
+            <span class="category-card-icon">☕</span>
+            <div class="category-card-name">Drinks</div>
+            <div class="category-card-count">28 items</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FEATURED MENU
+         ============================================ -->
+    <section class="section-padding" id="menu">
+      <div class="container">
+        <div class="menu-header">
+          <div>
+            <div class="section-label">Our Selection</div>
+            <h2 class="section-title">Featured Menu</h2>
+            <p class="section-subtitle">Chef-curated dishes made with locally sourced ingredients, prepared fresh for every order.</p>
+          </div>
+          <a href="#" class="btn btn-secondary btn-small" id="menu-view-all">View All</a>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Card 1 -->
+          <article class="menu-card" id="menu-item-1">
+            <img class="menu-card-image" src="images/burger.png" alt="Smoked Brisket Burger with caramelized onions" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Popular</span>
+              <h3 class="menu-card-name">Smoked Brisket Burger</h3>
+              <p class="menu-card-desc">Slow-smoked brisket, aged cheddar, caramelised onions on a brioche bun.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$14.90</span>
+                <button class="menu-card-add" aria-label="Add Smoked Brisket Burger to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="menu-card" id="menu-item-2">
+            <img class="menu-card-image" src="images/pizza.png" alt="Truffle Mushroom Pizza with arugula" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Chef's Pick</span>
+              <h3 class="menu-card-name">Truffle Mushroom Pizza</h3>
+              <p class="menu-card-desc">Wild mushrooms, truffle oil, fresh arugula, and shaved parmesan.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$16.50</span>
+                <button class="menu-card-add" aria-label="Add Truffle Mushroom Pizza to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="menu-card" id="menu-item-3">
+            <img class="menu-card-image" src="images/salmon.png" alt="Grilled Salmon Poke Bowl" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Healthy</span>
+              <h3 class="menu-card-name">Grilled Salmon Bowl</h3>
+              <p class="menu-card-desc">Fresh salmon, sushi rice, avocado, edamame, and sesame dressing.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$17.80</span>
+                <button class="menu-card-add" aria-label="Add Grilled Salmon Bowl to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="menu-card" id="menu-item-4">
+            <img class="menu-card-image" src="images/avocado-toast.png" alt="Avocado Toast with poached egg" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Breakfast</span>
+              <h3 class="menu-card-name">Avocado Toast</h3>
+              <p class="menu-card-desc">Sourdough, smashed avocado, poached egg, chili flakes, and microgreens.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$11.50</span>
+                <button class="menu-card-add" aria-label="Add Avocado Toast to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="menu-card" id="menu-item-5">
+            <img class="menu-card-image" src="images/pasta.png" alt="Creamy Pesto Pasta" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Classic</span>
+              <h3 class="menu-card-name">Creamy Pesto Pasta</h3>
+              <p class="menu-card-desc">Fresh basil pesto, pine nuts, parmesan, and sun-dried tomatoes.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$13.90</span>
+                <button class="menu-card-add" aria-label="Add Creamy Pesto Pasta to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="menu-card" id="menu-item-6">
+            <img class="menu-card-image" src="images/salad.png" alt="Mediterranean Salad Bowl" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Healthy</span>
+              <h3 class="menu-card-name">Mediterranean Salad</h3>
+              <p class="menu-card-desc">Mixed greens, feta, olives, cherry tomatoes, and lemon vinaigrette.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$10.90</span>
+                <button class="menu-card-add" aria-label="Add Mediterranean Salad to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="menu-card" id="menu-item-7">
+            <img class="menu-card-image" src="images/tiramisu.png" alt="Classic Tiramisu dessert" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Dessert</span>
+              <h3 class="menu-card-name">Classic Tiramisu</h3>
+              <p class="menu-card-desc">Espresso-soaked ladyfingers, mascarpone cream, and cocoa dusting.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$8.90</span>
+                <button class="menu-card-add" aria-label="Add Classic Tiramisu to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="menu-card" id="menu-item-8">
+            <img class="menu-card-image" src="images/acai-bowl.png" alt="Berry Açaí Smoothie Bowl" width="400" height="200" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Vegan</span>
+              <h3 class="menu-card-name">Berry Açaí Bowl</h3>
+              <p class="menu-card-desc">Açaí blend, granola, banana, blueberries, coconut, and chia seeds.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$12.50</span>
+                <button class="menu-card-add" aria-label="Add Berry Açaí Bowl to cart">+</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         HOW IT WORKS
+         ============================================ -->
+    <section class="how-it-works section-padding" id="how-it-works">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--spacing-xl);">
+          <div class="section-label">Simple & Fast</div>
+          <h2 class="section-title" style="margin-left: auto; margin-right: auto;">How It Works</h2>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Three easy steps to get your favourite artisan meal delivered fresh to your door.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card" id="step-1">
+            <div class="step-number">1</div>
+            <span class="step-icon">📋</span>
+            <h3 class="step-title">Browse the Menu</h3>
+            <p class="step-desc">Explore our curated selection of dishes from local artisan kitchens.</p>
+          </div>
+          <div class="step-card" id="step-2">
+            <div class="step-number">2</div>
+            <span class="step-icon">🛒</span>
+            <h3 class="step-title">Place Your Order</h3>
+            <p class="step-desc">Add your favourites to cart, customise your meal, and checkout in seconds.</p>
+          </div>
+          <div class="step-card" id="step-3">
+            <div class="step-number">3</div>
+            <span class="step-icon">🚲</span>
+            <h3 class="step-title">Enjoy at Home</h3>
+            <p class="step-desc">We deliver fast — sit back, relax, and enjoy a restaurant-quality meal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS
+         ============================================ -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-label">What People Say</div>
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-subtitle">Real feedback from our community of food lovers.</p>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" id="testimonial-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The truffle pizza arrived piping hot and tasted like it came straight from an Italian kitchen. Absolutely incredible quality!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👩</div>
+              <div>
+                <div class="testimonial-name">Priya Sharma</div>
+                <div class="testimonial-role">Regular customer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="testimonial-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I order the salmon bowl at least twice a week. The freshness is unmatched — it's like having a sushi chef at home."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👨</div>
+              <div>
+                <div class="testimonial-name">Arjun Mehta</div>
+                <div class="testimonial-role">Food enthusiast</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="testimonial-3">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Finally a delivery app that cares about presentation. Every dish arrives looking as good as it tastes. Five stars, always."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👩</div>
+              <div>
+                <div class="testimonial-name">Ananya Reddy</div>
+                <div class="testimonial-role">Loyal since day one</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         APP CTA BANNER
+         ============================================ -->
+    <section class="app-cta section-padding" id="app-cta">
+      <div class="container">
+        <div class="app-cta-content">
+          <div class="section-label">Get the App</div>
+          <h2 class="section-title">Order even faster<br />on your phone.</h2>
+          <p class="section-subtitle">Download the Coffee Roast app for exclusive deals, real-time tracking, and one-tap reordering.</p>
+          <div class="app-cta-features">
+            <div class="app-cta-feature">
+              <span class="app-cta-feature-icon">✓</span>
+              Real-time order tracking
+            </div>
+            <div class="app-cta-feature">
+              <span class="app-cta-feature-icon">✓</span>
+              Exclusive app-only discounts
+            </div>
+            <div class="app-cta-feature">
+              <span class="app-cta-feature-icon">✓</span>
+              One-tap reorder your favourites
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" id="app-cta-download">Download the App</a>
+        </div>
+
+        <div class="app-cta-visual">
+          <div class="app-cta-phone">
+            <div class="app-cta-phone-notch"></div>
+            <span class="app-cta-phone-icon">☕</span>
+            <div class="app-cta-phone-title">CoffeeRoast</div>
+            <div class="app-cta-phone-sub">Artisan food,<br />one tap away.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Coffee<span>Roast</span></div>
+          <p class="footer-brand-desc">Handcrafted meals from local artisan kitchens, delivered with care to your doorstep.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Featured</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#">Seasonal</a></li>
+            <li><a href="#">Drinks</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 CoffeeRoast. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram">&#x1F4F7;</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">&#x1F426;</a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">&#x1F310;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
